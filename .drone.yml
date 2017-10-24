@@ -15,5 +15,6 @@ pipeline:
   publish:
     image: heflik/weather-plugin
     tag: latest
-    commands:
-      - env
+    url: http://samples.openweathermap.org
+    api: '/data/2.5/weather?q='
+    location: katowice
