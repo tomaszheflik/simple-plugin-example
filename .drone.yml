@@ -1,0 +1,19 @@
+# pipeline to build simple plugin in go
+workspace:
+  base: /go
+
+pipeline:
+  build:
+    image: golang
+    environment:
+      - GOOS=linux
+      - GOARCH=amd64
+      - CGO_ENABLED=0
+    commands:
+      - env 
+
+  publish:
+    image: heflik/weather-plugin
+    tag: latest
+    commands:
+      - env
