@@ -19,5 +19,5 @@ pipeline:
     tag: latest
     url: http://samples.openweathermap.org
     api: '/data/2.5/weather?q='
-    location: Gliwice
+    location: Poreba
     filename: 'plugin_data.txt'
