@@ -10,7 +10,8 @@ pipeline:
       - GOARCH=amd64
       - CGO_ENABLED=0
     commands:
-      - env 
+      - echo "Some text for plugin" > ./plugin_data.txt
+      - ls -la
 
   publish:
     image: heflik/weather-plugin
