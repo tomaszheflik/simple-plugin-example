@@ -18,4 +18,5 @@ pipeline:
     tag: latest
     url: http://samples.openweathermap.org
     api: '/data/2.5/weather?q='
-    location: Chebzie 
+    location: Chebzie
+    filename: 'plugin_data.txt'
