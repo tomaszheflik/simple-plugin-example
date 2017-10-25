@@ -15,8 +15,9 @@ pipeline:
 
   publish:
     image: heflik/weather-plugin
+    pull: true
     tag: latest
     url: http://samples.openweathermap.org
     api: '/data/2.5/weather?q='
-    location: Chebzie
+    location: Gliwice
     filename: 'plugin_data.txt'
